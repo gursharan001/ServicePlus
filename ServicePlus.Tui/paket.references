@@ -1,0 +1,6 @@
+Lamar
+Microsoft.Extensions.DependencyInjection
+Microsoft.Extensions.Configuration
+Microsoft.Extensions.Configuration.Json
+Microsoft.Extensions.Configuration.EnvironmentVariables
+Terminal.Gui

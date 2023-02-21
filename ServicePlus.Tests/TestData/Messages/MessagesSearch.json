@@ -1,0 +1,433 @@
+[
+  {
+    "id": "7ab695f0-f206-6ad0-5c7b-31e2947e2e48",
+    "message_id": "6f43e93a-eaae-438c-b402-ae9200ced473",
+    "message_type": "NsbMessages.ShippingDomain.Events.DeliveryJobVoyageUpdateEvent",
+    "sending_endpoint": {
+      "name": "qasnsbserver",
+      "host_id": "e938fc13-0990-dd39-8f87-f438964a6515",
+      "host": "VGL1ONETRTEST"
+    },
+    "receiving_endpoint": {
+      "name": "qasnsbserver.shippingdomain",
+      "host_id": "ab205d7f-76bd-a515-fdfd-59e309e2d646",
+      "host": "VGL1ONETRTEST"
+    },
+    "time_sent": "2022-05-11T02:34:05.38505Z",
+    "processed_at": "2022-05-11T02:34:05.511037Z",
+    "critical_time": "00:00:00",
+    "processing_time": "00:00:00",
+    "delivery_time": "00:00:00",
+    "is_system_message": false,
+    "conversation_id": "6f89fcf3-eec1-49ed-a7c7-ae9200ced3d4",
+    "headers": [
+      {
+        "key": "NServiceBus.MessageId",
+        "value": "6f43e93a-eaae-438c-b402-ae9200ced473"
+      },
+      {
+        "key": "NServiceBus.CorrelationId",
+        "value": "77a92794-6a48-445b-ac8a-ae9200ced476"
+      },
+      {
+        "key": "NServiceBus.MessageIntent",
+        "value": "Publish"
+      },
+      {
+        "key": "NServiceBus.Version",
+        "value": "5.2.26"
+      },
+      {
+        "key": "NServiceBus.TimeSent",
+        "value": "2022-05-11 02:34:05:385050 Z"
+      },
+      {
+        "key": "SignalRConnectionId",
+        "value": null
+      },
+      {
+        "key": "UserId",
+        "value": "3866"
+      },
+      {
+        "key": "UserRef",
+        "value": "{\"id\":3866,\"userId\":\"gsingh\",\"fullName\":\"Gursharan Singh\",\"emailAddress\":\"gsingh@visaglobal.com.au\"}"
+      },
+      {
+        "key": "CommandSentUtc",
+        "value": "\"2022-05-11T02:32:59.227Z\""
+      },
+      {
+        "key": "NServiceBus.ContentType",
+        "value": "text/xml"
+      },
+      {
+        "key": "NServiceBus.EnclosedMessageTypes",
+        "value": "NsbMessages.ShippingDomain.Events.DeliveryJobVoyageUpdateEvent, NsbMessages, Version=2022.10.4895.0, Culture=neutral, PublicKeyToken=null;NsbMessages.ShippingDomain.Events.IDeliveryJobVoyageUpdatedEvent, NsbMessages, Version=2022.10.4895.0, Culture=neutral, PublicKeyToken=null"
+      },
+      {
+        "key": "WinIdName",
+        "value": "VISAAUST\\ONETRACK_VISA_QAS"
+      },
+      {
+        "key": "NServiceBus.RelatedTo",
+        "value": "e72e4dc5-c925-45d9-822a-ae9200ced3ef"
+      },
+      {
+        "key": "NServiceBus.ConversationId",
+        "value": "6f89fcf3-eec1-49ed-a7c7-ae9200ced3d4"
+      },
+      {
+        "key": "CorrId",
+        "value": "6f43e93a-eaae-438c-b402-ae9200ced473\\0"
+      },
+      {
+        "key": "NServiceBus.OriginatingMachine",
+        "value": "VGL1ONETRTEST"
+      },
+      {
+        "key": "NServiceBus.OriginatingEndpoint",
+        "value": "qasnsbserver"
+      },
+      {
+        "key": "$.diagnostics.originating.hostid",
+        "value": "e938fc130990dd398f87f438964a6515"
+      },
+      {
+        "key": "NServiceBus.ReplyToAddress",
+        "value": "qasnsbserver@VGL1ONETRTEST"
+      },
+      {
+        "key": "$.diagnostics.hostid",
+        "value": "ab205d7f76bda515fdfd59e309e2d646"
+      },
+      {
+        "key": "$.diagnostics.hostdisplayname",
+        "value": "VGL1ONETRTEST"
+      },
+      {
+        "key": "NServiceBus.ExceptionInfo.ExceptionType",
+        "value": "System.InvalidOperationException"
+      },
+      {
+        "key": "NServiceBus.ExceptionInfo.HelpLink",
+        "value": null
+      },
+      {
+        "key": "NServiceBus.ExceptionInfo.Message",
+        "value": "No handlers could be found for message type: NsbMessages.ShippingDomain.Events.DeliveryJobVoyageUpdateEvent"
+      },
+      {
+        "key": "NServiceBus.ExceptionInfo.Source",
+        "value": "NServiceBus.Core"
+      },
+      {
+        "key": "NServiceBus.ExceptionInfo.StackTrace",
+        "value": "System.InvalidOperationException: No handlers could be found for message type: NsbMessages.ShippingDomain.Events.DeliveryJobVoyageUpdateEvent\n   at NServiceBus.LoadHandlersBehavior.Invoke(IncomingContext context, Action next)\n   at NServiceBus.BehaviorChain`1.InvokeNext(T context)\n   at NServiceBus.BehaviorChain`1.<>c__DisplayClass4_1.<InvokeNext>b__0()\n   at Visa.Zaphod.ShippingDomain.Configuration.Uow.UnitOfWorkBehavior.Invoke(IncomingContext context, Action next) in D:\\BuildAgent\\work\\b2aa8b18f65acc35\\NsbServer.ShippingDomain\\Configuration\\Uow\\UnitOfWork.cs:line 44\n   at NServiceBus.BehaviorChain`1.InvokeNext(T context)\n   at NServiceBus.BehaviorChain`1.<>c__DisplayClass4_1.<InvokeNext>b__0()\n   at Visa.Zaphod.ShippingDomain.Configuration.Dtc.DtcErrorTrackingBehaviour.Invoke(IncomingContext context, Action next) in D:\\BuildAgent\\work\\b2aa8b18f65acc35\\NsbServer.ShippingDomain\\Configuration\\Dtc\\DtcErrorTrackingBehaviour.cs:line 27\n   at NServiceBus.BehaviorChain`1.InvokeNext(T context)\n   at NServiceBus.BehaviorChain`1.<>c__DisplayClass4_1.<InvokeNext>b__0()\n   at NServiceBus.BehaviorChain`1.InvokeNext(T context)\n   at NServiceBus.BehaviorChain`1.<>c__DisplayClass4_1.<InvokeNext>b__0()\n   at NServiceBus.ExecuteLogicalMessagesBehavior.Invoke(IncomingContext context, Action next)\n   at NServiceBus.BehaviorChain`1.InvokeNext(T context)\n   at NServiceBus.BehaviorChain`1.<>c__DisplayClass4_1.<InvokeNext>b__0()\n   at NServiceBus.BehaviorChain`1.InvokeNext(T context)\n   at NServiceBus.BehaviorChain`1.<>c__DisplayClass4_1.<InvokeNext>b__0()\n   at NServiceBus.BehaviorChain`1.InvokeNext(T context)\n   at NServiceBus.BehaviorChain`1.<>c__DisplayClass4_1.<InvokeNext>b__0()\n   at NServiceBus.BehaviorChain`1.InvokeNext(T context)\n   at NServiceBus.BehaviorChain`1.<>c__DisplayClass4_1.<InvokeNext>b__0()\n   at NServiceBus.BehaviorChain`1.InvokeNext(T context)\n   at NServiceBus.BehaviorChain`1.<>c__DisplayClass4_1.<InvokeNext>b__0()\n   at NServiceBus.UnitOfWorkBehavior.Invoke(IncomingContext context, Action next)\n   at NServiceBus.BehaviorChain`1.InvokeNext(T context)\n   at NServiceBus.BehaviorChain`1.<>c__DisplayClass4_1.<InvokeNext>b__0()\n   at NServiceBus.ChildContainerBehavior.Invoke(IncomingContext context, Action next)\n   at NServiceBus.BehaviorChain`1.InvokeNext(T context)\n   at NServiceBus.BehaviorChain`1.<>c__DisplayClass4_1.<InvokeNext>b__0()\n   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IncomingContext context, Action next)\n   at NServiceBus.BehaviorChain`1.InvokeNext(T context)\n   at NServiceBus.BehaviorChain`1.<>c__DisplayClass4_1.<InvokeNext>b__0()\n   at NServiceBus.AuditBehavior.Invoke(IncomingContext context, Action next)\n   at NServiceBus.BehaviorChain`1.InvokeNext(T context)\n   at NServiceBus.BehaviorChain`1.<>c__DisplayClass4_1.<InvokeNext>b__0()\n   at NServiceBus.Metrics.ServiceControl.ServiceControlMonitoring.ServiceControlMonitoringRegistrationBehavior.Invoke(IncomingContext context, Action next)\n   at NServiceBus.BehaviorChain`1.InvokeNext(T context)\n   at NServiceBus.BehaviorChain`1.Invoke()\n   at NServiceBus.Pipeline.PipelineExecutor.Execute[T](BehaviorChain`1 pipelineAction, T context)\n   at NServiceBus.Unicast.Transport.TransportReceiver.OnTransportMessageReceived(TransportMessage msg)\n   at NServiceBus.Unicast.Transport.TransportReceiver.ProcessMessage(TransportMessage message)\n   at NServiceBus.Unicast.Transport.TransportReceiver.TryProcess(TransportMessage message)\n   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.Action(TransactionSettings transactionSettings, TransactionOptions transactionOptions, MsmqUnitOfWork unitOfWork, MessageQueue receiveQueue, MessageQueue errorQueue, CircuitBreaker circuitBreaker, CriticalError criticalError, AutoResetEvent peekResetEvent, TimeSpan receiveTimeout, SemaphoreSlim throttlingSemaphore, Func`2 tryProcessMessage, Action`2 endProcessMessage)"
+      },
+      {
+        "key": "NServiceBus.FailedQ",
+        "value": "qasnsbserver.shippingdomain@VGL1ONETRTEST"
+      },
+      {
+        "key": "NServiceBus.TimeOfFailure",
+        "value": "2022-05-11 02:34:05:511037 Z"
+      },
+      {
+        "key": "NServiceBus.Retries.Timestamp",
+        "value": "2022-05-11 02:33:02:856365 Z"
+      },
+      {
+        "key": "NServiceBus.Timeout.RouteExpiredTimeoutTo",
+        "value": "qasnsbserver.shippingdomain@VGL1ONETRTEST"
+      },
+      {
+        "key": "NServiceBus.Timeout.Expire",
+        "value": "2022-05-11 02:34:04:669988 Z"
+      },
+      {
+        "key": "NServiceBus.RelatedToTimeoutId",
+        "value": null
+      }
+    ],
+    "status": "failed",
+    "message_intent": "publish",
+    "body_url": "/messages/6f43e93a-eaae-438c-b402-ae9200ced473/body?instance_id=aHR0cDovL2xvY2FsaG9zdDozMzMzMy9hcGk.",
+    "body_size": 477,
+    "instance_id": "aHR0cDovL2xvY2FsaG9zdDozMzMzMy9hcGk."
+  },
+  {
+    "id": "3b917f67-9366-0add-812a-d52dd03779de",
+    "message_id": "b0b6ece0-d0a5-4c62-b19d-ae9200ced48c",
+    "message_type": "Visa.Zaphod.Notification.Events.ISystemAlertCreatedEvent",
+    "sending_endpoint": {
+      "name": "qasnsbserver.notification",
+      "host_id": "511828d6-ab6d-b16e-44b2-d80c6c2cc344",
+      "host": "VGL1ONETRTEST"
+    },
+    "receiving_endpoint": {
+      "name": "qasnsbserver",
+      "host_id": "e938fc13-0990-dd39-8f87-f438964a6515",
+      "host": "VGL1ONETRTEST"
+    },
+    "time_sent": "2022-05-11T02:33:02.758375Z",
+    "processed_at": "2022-05-11T02:33:02.959377Z",
+    "critical_time": "00:00:00.2010020",
+    "processing_time": "00:00:00.0099550",
+    "delivery_time": "00:00:00.1910470",
+    "is_system_message": false,
+    "conversation_id": "6f89fcf3-eec1-49ed-a7c7-ae9200ced3d4",
+    "headers": [
+      {
+        "key": "NServiceBus.MessageId",
+        "value": "b0b6ece0-d0a5-4c62-b19d-ae9200ced48c"
+      },
+      {
+        "key": "NServiceBus.CorrelationId",
+        "value": "05b23120-b09d-4ff0-954d-ae9200ced48d"
+      },
+      {
+        "key": "NServiceBus.MessageIntent",
+        "value": "Publish"
+      },
+      {
+        "key": "NServiceBus.Version",
+        "value": "5.2.26"
+      },
+      {
+        "key": "NServiceBus.TimeSent",
+        "value": "2022-05-11 02:33:02:758375 Z"
+      },
+      {
+        "key": "NServiceBus.ContentType",
+        "value": "text/xml"
+      },
+      {
+        "key": "NServiceBus.EnclosedMessageTypes",
+        "value": "Visa.Zaphod.Notification.Events.ISystemAlertCreatedEvent, NsbMessages.Notification, Version=1.0.0.5, Culture=neutral, PublicKeyToken=null"
+      },
+      {
+        "key": "SignalRConnectionId",
+        "value": null
+      },
+      {
+        "key": "UserId",
+        "value": "3866"
+      },
+      {
+        "key": "UserRef",
+        "value": "{\"id\":3866,\"userId\":\"gsingh\",\"fullName\":\"Gursharan Singh\",\"emailAddress\":\"gsingh@visaglobal.com.au\"}"
+      },
+      {
+        "key": "CommandSentUtc",
+        "value": "\"2022-05-11T02:32:59.227Z\""
+      },
+      {
+        "key": "WinIdName",
+        "value": "VISAAUST\\ONETRACK_VISA_QAS"
+      },
+      {
+        "key": "NServiceBus.RelatedTo",
+        "value": "6f43e93a-eaae-438c-b402-ae9200ced473"
+      },
+      {
+        "key": "NServiceBus.ConversationId",
+        "value": "6f89fcf3-eec1-49ed-a7c7-ae9200ced3d4"
+      },
+      {
+        "key": "CorrId",
+        "value": "b0b6ece0-d0a5-4c62-b19d-ae9200ced48c\\0"
+      },
+      {
+        "key": "NServiceBus.OriginatingMachine",
+        "value": "VGL1ONETRTEST"
+      },
+      {
+        "key": "NServiceBus.OriginatingEndpoint",
+        "value": "qasnsbserver.notification"
+      },
+      {
+        "key": "$.diagnostics.originating.hostid",
+        "value": "511828d6ab6db16e44b2d80c6c2cc344"
+      },
+      {
+        "key": "NServiceBus.ReplyToAddress",
+        "value": "qasnsbserver.notification@VGL1ONETRTEST"
+      },
+      {
+        "key": "$.diagnostics.hostid",
+        "value": "e938fc130990dd398f87f438964a6515"
+      },
+      {
+        "key": "$.diagnostics.hostdisplayname",
+        "value": "VGL1ONETRTEST"
+      },
+      {
+        "key": "$.diagnostics.license.expired",
+        "value": "false"
+      },
+      {
+        "key": "NServiceBus.ProcessingStarted",
+        "value": "2022-05-11 02:33:02:949422 Z"
+      },
+      {
+        "key": "NServiceBus.ProcessingEnded",
+        "value": "2022-05-11 02:33:02:959377 Z"
+      },
+      {
+        "key": "NServiceBus.ProcessingMachine",
+        "value": "VGL1ONETRTEST"
+      },
+      {
+        "key": "NServiceBus.ProcessingEndpoint",
+        "value": "qasnsbserver"
+      },
+      {
+        "key": "NServiceBus.OriginatingAddress",
+        "value": "qasnsbserver.notification@VGL1ONETRTEST"
+      }
+    ],
+    "status": "successful",
+    "message_intent": "publish",
+    "body_url": "/messages/b0b6ece0-d0a5-4c62-b19d-ae9200ced48c/body?instance_id=aHR0cDovL2xvY2FsaG9zdDo0NDQ0NC9hcGkv",
+    "body_size": 311,
+    "instance_id": "aHR0cDovL2xvY2FsaG9zdDo0NDQ0NC9hcGkv"
+  },
+  {
+    "id": "45c256a6-8d8e-83b8-0a39-9f2c25e6fbff",
+    "message_id": "80436d1e-a04e-4fa6-bf0f-ae9200ced48b",
+    "message_type": "Visa.Zaphod.Notification.Events.ISystemAlertCreatedEvent",
+    "sending_endpoint": {
+      "name": "qasnsbserver.notification",
+      "host_id": "511828d6-ab6d-b16e-44b2-d80c6c2cc344",
+      "host": "VGL1ONETRTEST"
+    },
+    "receiving_endpoint": {
+      "name": "qasnsbserver",
+      "host_id": "e938fc13-0990-dd39-8f87-f438964a6515",
+      "host": "VGL1ONETRTEST"
+    },
+    "time_sent": "2022-05-11T02:33:02.753369Z",
+    "processed_at": "2022-05-11T02:33:02.922376Z",
+    "critical_time": "00:00:00.1690070",
+    "processing_time": "00:00:00.0087560",
+    "delivery_time": "00:00:00.1602510",
+    "is_system_message": false,
+    "conversation_id": "6f89fcf3-eec1-49ed-a7c7-ae9200ced3d4",
+    "headers": [
+      {
+        "key": "NServiceBus.MessageId",
+        "value": "80436d1e-a04e-4fa6-bf0f-ae9200ced48b"
+      },
+      {
+        "key": "NServiceBus.CorrelationId",
+        "value": "33a73e49-f62e-47c1-b1cb-ae9200ced48c"
+      },
+      {
+        "key": "NServiceBus.MessageIntent",
+        "value": "Publish"
+      },
+      {
+        "key": "NServiceBus.Version",
+        "value": "5.2.26"
+      },
+      {
+        "key": "NServiceBus.TimeSent",
+        "value": "2022-05-11 02:33:02:753369 Z"
+      },
+      {
+        "key": "NServiceBus.ContentType",
+        "value": "text/xml"
+      },
+      {
+        "key": "NServiceBus.EnclosedMessageTypes",
+        "value": "Visa.Zaphod.Notification.Events.ISystemAlertCreatedEvent, NsbMessages.Notification, Version=1.0.0.5, Culture=neutral, PublicKeyToken=null"
+      },
+      {
+        "key": "SignalRConnectionId",
+        "value": null
+      },
+      {
+        "key": "UserId",
+        "value": "3866"
+      },
+      {
+        "key": "UserRef",
+        "value": "{\"id\":3866,\"userId\":\"gsingh\",\"fullName\":\"Gursharan Singh\",\"emailAddress\":\"gsingh@visaglobal.com.au\"}"
+      },
+      {
+        "key": "CommandSentUtc",
+        "value": "\"2022-05-11T02:32:59.227Z\""
+      },
+      {
+        "key": "WinIdName",
+        "value": "VISAAUST\\ONETRACK_VISA_QAS"
+      },
+      {
+        "key": "NServiceBus.RelatedTo",
+        "value": "6f43e93a-eaae-438c-b402-ae9200ced473"
+      },
+      {
+        "key": "NServiceBus.ConversationId",
+        "value": "6f89fcf3-eec1-49ed-a7c7-ae9200ced3d4"
+      },
+      {
+        "key": "CorrId",
+        "value": "80436d1e-a04e-4fa6-bf0f-ae9200ced48b\\0"
+      },
+      {
+        "key": "NServiceBus.OriginatingMachine",
+        "value": "VGL1ONETRTEST"
+      },
+      {
+        "key": "NServiceBus.OriginatingEndpoint",
+        "value": "qasnsbserver.notification"
+      },
+      {
+        "key": "$.diagnostics.originating.hostid",
+        "value": "511828d6ab6db16e44b2d80c6c2cc344"
+      },
+      {
+        "key": "NServiceBus.ReplyToAddress",
+        "value": "qasnsbserver.notification@VGL1ONETRTEST"
+      },
+      {
+        "key": "$.diagnostics.hostid",
+        "value": "e938fc130990dd398f87f438964a6515"
+      },
+      {
+        "key": "$.diagnostics.hostdisplayname",
+        "value": "VGL1ONETRTEST"
+      },
+      {
+        "key": "$.diagnostics.license.expired",
+        "value": "false"
+      },
+      {
+        "key": "NServiceBus.ProcessingStarted",
+        "value": "2022-05-11 02:33:02:913620 Z"
+      },
+      {
+        "key": "NServiceBus.ProcessingEnded",
+        "value": "2022-05-11 02:33:02:922376 Z"
+      },
+      {
+        "key": "NServiceBus.ProcessingMachine",
+        "value": "VGL1ONETRTEST"
+      },
+      {
+        "key": "NServiceBus.ProcessingEndpoint",
+        "value": "qasnsbserver"
+      },
+      {
+        "key": "NServiceBus.OriginatingAddress",
+        "value": "qasnsbserver.notification@VGL1ONETRTEST"
+      }
+    ],
+    "status": "successful",
+    "message_intent": "publish",
+    "body_url": "/messages/80436d1e-a04e-4fa6-bf0f-ae9200ced48b/body?instance_id=aHR0cDovL2xvY2FsaG9zdDo0NDQ0NC9hcGkv",
+    "body_size": 311,
+    "instance_id": "aHR0cDovL2xvY2FsaG9zdDo0NDQ0NC9hcGkv"
+  }
+]

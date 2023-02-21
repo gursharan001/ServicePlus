@@ -1,0 +1,13 @@
+[
+  {
+    "id": "b30d9bb2-e914-2346-e867-9d0836696690",
+    "title": "devnsbserver@GSINGHDEVW10",
+    "type": "Endpoint Address",
+    "count": 19,
+    "first": "2022-06-06T07:23:37.245057Z",
+    "last": "2022-06-11T02:30:45.871961Z",
+    "operation_status": "None",
+    "operation_progress": 0.0,
+    "need_user_acknowledgement": false
+  }
+]

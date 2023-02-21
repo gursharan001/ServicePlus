@@ -1,0 +1,17 @@
+source "C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\"
+source https://api.nuget.org/v3/index.json
+framework: net6.0
+nuget coverlet.collector
+nuget CsvHelper
+nuget FluentAssertions
+nuget Lamar
+nuget Marten
+nuget Microsoft.Extensions.Configuration
+nuget Microsoft.Extensions.Configuration.EnvironmentVariables
+nuget Microsoft.Extensions.Configuration.Json
+nuget Microsoft.Extensions.DependencyInjection
+nuget Microsoft.Extensions.Http
+nuget Microsoft.NET.Test.Sdk
+nuget NUNIT
+nuget NUnit3TestAdapter
+nuget Terminal.Gui

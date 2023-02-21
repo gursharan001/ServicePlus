@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Update="TestData\**\*.*">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="appsettings.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ServicePlus.ServiceControl\ServicePlus.ServiceControl.csproj" />
+      <ProjectReference Include="..\ServicePlus.Tui\ServicePlus.Tui.csproj" />
+    </ItemGroup>
+    <Import Project="..\.paket\Paket.Restore.targets" />
+</Project>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<DeliveryJobVoyageUpdateEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/NsbMessages.ShippingDomain.Events" xmlns:baseType="NsbMessages.ShippingDomain.Events.IDeliveryJobVoyageUpdatedEvent">
+<DeliveryJob>
+<Id>1275755</Id>
+<Description>I90371870</Description>
+</DeliveryJob>
+<OldVoyage>FC451A</OldVoyage>
+<NewVoyage>0123456789</NewVoyage>
+</DeliveryJobVoyageUpdateEvent>
